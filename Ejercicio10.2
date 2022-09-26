@@ -1,0 +1,14 @@
+import tkinter
+from tkinter import ttk
+
+window = tkinter.Tk()
+
+label = ttk.Label(window, text='Elige color')
+label.pack(anchor='nw')
+
+listaColores = ['Morado', 'Rojo', 'Negro', 'Verde', 'Amarillo']
+listaColores_items = tkinter.StringVar(value=listaColores)
+listbox = tkinter.Listbox(window, height=25, listvariable=listaColores_items)
+listbox.pack(anchor='nw')
+
+window.mainloop()
